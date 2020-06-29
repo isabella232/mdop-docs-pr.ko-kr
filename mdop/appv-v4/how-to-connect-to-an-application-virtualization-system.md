@@ -1,0 +1,75 @@
+---
+title: Application Virtualization 시스템에 연결하는 방법
+description: Application Virtualization 시스템에 연결하는 방법
+author: dansimp
+ms.assetid: ac38216c-5464-4c0b-a4d3-3949ba6358ac
+ms.reviewer: ''
+manager: dansimp
+ms.author: dansimp
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
+ms.date: 08/30/2016
+ms.openlocfilehash: 30d60e187e1b7595fd0dce6641fa027a1df68f3d
+ms.sourcegitcommit: 354664bc527d93f80687cd2eba70d1eea024c7c3
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "10817713"
+---
+# <span data-ttu-id="e3a13-103">Application Virtualization 시스템에 연결하는 방법</span><span class="sxs-lookup"><span data-stu-id="e3a13-103">How to Connect to an Application Virtualization System</span></span>
+
+
+<span data-ttu-id="e3a13-104">관리 콘솔을 사용 하 여 응용 프로그램, 파일 형식 연결, 패키지, 응용 프로그램 라이선스, 서버 그룹, 공급자 정책 및 관리자를 관리할 수 있으려면 먼저 Application Virtualization Server Management Console을 Application Virtualization 시스템에 연결 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="e3a13-104">You must connect the Application Virtualization Server Management Console to an Application Virtualization System before you can use the management console to manage applications, file type associations, packages, application licenses, server groups, provider policies and administrators.</span></span> <span data-ttu-id="e3a13-105">다음 절차에서는 콘솔을 Application Virtualization System에 연결 하기 위해 수행 해야 하는 단계를 간략하게 설명 합니다.</span><span class="sxs-lookup"><span data-stu-id="e3a13-105">The following procedure outlines the steps you must follow to connect the console to an Application Virtualization System.</span></span>
+
+**<span data-ttu-id="e3a13-106">Application Virtualization System에 연결 하려면</span><span class="sxs-lookup"><span data-stu-id="e3a13-106">To connect to an Application Virtualization System</span></span>**
+
+1. <span data-ttu-id="e3a13-107">**범위** 창에서 Application virtualization system 노드를 마우스 오른쪽 단추로 클릭 하 고 팝업 메뉴에서 **application Virtualization system에 연결을** 선택 합니다.</span><span class="sxs-lookup"><span data-stu-id="e3a13-107">Right-click the Application Virtualization System node in the **Scope** pane, and select **Connect to Application Virtualization System** from the pop-up menu.</span></span>
+
+   **<span data-ttu-id="e3a13-108">참고</span><span class="sxs-lookup"><span data-stu-id="e3a13-108">Note</span></span>**  
+   <span data-ttu-id="e3a13-109">Application Virtualization server management에는 응용 프로그램 가상화 관리 콘솔, 관리 웹 서비스 및 SQL 데이터 저장소의 세 가지 구성 요소가 있습니다.</span><span class="sxs-lookup"><span data-stu-id="e3a13-109">There are three components to Application Virtualization server management: the Application Virtualization Management Console, the Management Web Service, and the SQL Datastore.</span></span> <span data-ttu-id="e3a13-110">이러한 구성 요소가 여러 물리적 컴퓨터에 걸쳐 분산 되어 있는 경우 구성 요소가 시스템에서 통신 하도록 적절 하 게 보안을 구성 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="e3a13-110">If these components are distributed across different physical machines, you must configure security properly for the components to communicate across the system.</span></span> <span data-ttu-id="e3a13-111">자세한 내용은 다음 설명서와 문서를 참조 하세요.</span><span class="sxs-lookup"><span data-stu-id="e3a13-111">For more information, see the following manuals and articles:</span></span>
+
+   <span data-ttu-id="e3a13-112">[위임용으로 트러스트 되도록 서버를 구성 하는 방법](https://go.microsoft.com/fwlink/?LinkID=166682) (https://go.microsoft.com/fwlink/?LinkID=166682)</span><span class="sxs-lookup"><span data-stu-id="e3a13-112">[How to Configure the Server to be Trusted for Delegation](https://go.microsoft.com/fwlink/?LinkID=166682) (https://go.microsoft.com/fwlink/?LinkID=166682)</span></span>
+
+   <span data-ttu-id="e3a13-113">[Application Virtualization System에 대 한 계획 및 배포 가이드](https://go.microsoft.com/fwlink/?LinkID=122063) (https://go.microsoft.com/fwlink/?LinkID=122063)</span><span class="sxs-lookup"><span data-stu-id="e3a13-113">[Planning and Deployment Guide for the Application Virtualization System](https://go.microsoft.com/fwlink/?LinkID=122063) (https://go.microsoft.com/fwlink/?LinkID=122063)</span></span>
+
+   <span data-ttu-id="e3a13-114">[Application Virtualization System에 대 한 운영 가이드](https://go.microsoft.com/fwlink/?LinkID=133129) (https://go.microsoft.com/fwlink/?LinkID=133129)</span><span class="sxs-lookup"><span data-stu-id="e3a13-114">[Operations Guide for the Application Virtualization System](https://go.microsoft.com/fwlink/?LinkID=133129) (https://go.microsoft.com/fwlink/?LinkID=133129)</span></span>
+
+   <span data-ttu-id="e3a13-115">Microsoft 기술 자료 [문서 930472](https://go.microsoft.com/fwlink/?LinkId=114647) (https://go.microsoft.com/fwlink/?LinkId=114647)</span><span class="sxs-lookup"><span data-stu-id="e3a13-115">[Article 930472](https://go.microsoft.com/fwlink/?LinkId=114647) in the Microsoft Knowledge Base (https://go.microsoft.com/fwlink/?LinkId=114647)</span></span>
+
+   <span data-ttu-id="e3a13-116">Microsoft 기술 자료 [문서 930565](https://go.microsoft.com/fwlink/?LinkId=114648) (https://go.microsoft.com/fwlink/?LinkId=114648)</span><span class="sxs-lookup"><span data-stu-id="e3a13-116">[Article 930565](https://go.microsoft.com/fwlink/?LinkId=114648) in the Microsoft Knowledge Base (https://go.microsoft.com/fwlink/?LinkId=114648)</span></span>
+
+     
+
+2. <span data-ttu-id="e3a13-117">**Application Virtualization System에 연결** 대화 상자에서 필드를 완성 합니다.</span><span class="sxs-lookup"><span data-stu-id="e3a13-117">Complete the fields in the **Connect to Application Virtualization System** dialog box:</span></span>
+
+   1. <span data-ttu-id="e3a13-118">**웹 서비스 호스트 이름**-연결 하려는 Application Virtualization 시스템의 이름을 입력 하거나 **localhost** 를 입력 하 여 로컬 서버에 연결 합니다.</span><span class="sxs-lookup"><span data-stu-id="e3a13-118">**Web Service Host Name**—Enter the name of the Application Virtualization System to which you want to connect, or enter **localhost** to connect to the local server.</span></span>
+
+   2. <span data-ttu-id="e3a13-119">보안 **연결 사용**— 보안 연결을 사용 하 여 서버에 연결 하려면이 확인란을 선택 합니다.</span><span class="sxs-lookup"><span data-stu-id="e3a13-119">**Use Secure Connection**—Select this check box if you want to connect to the server with a secure connection.</span></span>
+
+   3. <span data-ttu-id="e3a13-120">**포트 (port**)-연결에 사용할 포트 번호를 입력 합니다.</span><span class="sxs-lookup"><span data-stu-id="e3a13-120">**Port**—Enter the port number you want to use for the connection.</span></span> <span data-ttu-id="e3a13-121">**80** 는 기본 일반 포트 번호이 고 **443** 는 보안 포트 번호입니다.</span><span class="sxs-lookup"><span data-stu-id="e3a13-121">**80** is the default regular port number, and **443** is the secure-port number.</span></span>
+
+   4. <span data-ttu-id="e3a13-122">**현재 Windows 계정 사용**— 현재 windows 계정 자격 증명을 사용 하려면이 라디오 단추를 선택 합니다.</span><span class="sxs-lookup"><span data-stu-id="e3a13-122">**Use Current Windows Account**—Select this radio button to use the current Windows account credentials.</span></span>
+
+   5. <span data-ttu-id="e3a13-123">**Windows 계정 지정**— 다른 사용자로 서버에 연결 하려는 경우이 라디오 단추를 선택 합니다.</span><span class="sxs-lookup"><span data-stu-id="e3a13-123">**Specify Windows Account**—Select this radio button when you want to connect to the server as a different user.</span></span>
+
+   6. <span data-ttu-id="e3a13-124">**이름 (Name**)- *DOMAIN\\username* 또는 username@domain 형식을 사용 하 여 새 사용자의 이름을 입력 합니다 <em> </em> .</span><span class="sxs-lookup"><span data-stu-id="e3a13-124">**Name**—Enter the name of the new user by using either the *DOMAIN\\username* or the <em>username@domain</em> format.</span></span>
+
+   7. <span data-ttu-id="e3a13-125">**비밀 번호**— 새 사용자에 게 해당 하는 비밀 번호를 입력 합니다.</span><span class="sxs-lookup"><span data-stu-id="e3a13-125">**Password**—Enter the password that corresponds to the new user.</span></span>
+
+3. <span data-ttu-id="e3a13-126">**확인**을 클릭합니다.</span><span class="sxs-lookup"><span data-stu-id="e3a13-126">Click **OK**.</span></span>
+
+## <span data-ttu-id="e3a13-127">관련 항목</span><span class="sxs-lookup"><span data-stu-id="e3a13-127">Related topics</span></span>
+
+
+[<span data-ttu-id="e3a13-128">Application Virtualization Server Management Console에서 관리 작업을 수행하는 방법</span><span class="sxs-lookup"><span data-stu-id="e3a13-128">How to Perform Administrative Tasks in the Application Virtualization Server Management Console</span></span>](how-to-perform-administrative-tasks-in-the-application-virtualization-server-management-console.md)
+
+ 
+
+ 
+
+
+
+
+
