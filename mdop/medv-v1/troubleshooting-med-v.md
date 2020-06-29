@@ -1,0 +1,197 @@
+---
+title: MED-V 문제 해결
+description: MED-V 문제 해결
+author: dansimp
+ms.assetid: f43dae36-6485-4e06-9c66-0a646e27079d
+ms.reviewer: ''
+manager: dansimp
+ms.author: dansimp
+ms.pagetype: mdop, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
+ms.date: 06/16/2016
+ms.openlocfilehash: 38d13be699a92368ff258026acd8e0d5f0e28cd6
+ms.sourcegitcommit: 354664bc527d93f80687cd2eba70d1eea024c7c3
+ms.translationtype: MT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "10825863"
+---
+# <span data-ttu-id="e7a2f-103">MED-V 문제 해결</span><span class="sxs-lookup"><span data-stu-id="e7a2f-103">Troubleshooting MED-V</span></span>
+
+
+<span data-ttu-id="e7a2f-104">이 섹션에서는 MED-V (Microsoft 엔터프라이즈 데스크톱 가상화)의 일반적인 문제를 해결 하는 데 도움이 되는 정보를 제공 합니다.</span><span class="sxs-lookup"><span data-stu-id="e7a2f-104">This section provides information to help troubleshoot general issues with Microsoft Enterprise Desktop Virtualization (MED-V).</span></span>
+
+## <span data-ttu-id="e7a2f-105">호스트 해상도를 변경한 다음 MED-V 작업 영역을 최대화 하면 데스크톱이 검게 표시 됩니다.</span><span class="sxs-lookup"><span data-stu-id="e7a2f-105">Changing the host resolution and then maximizing the MED-V workspace causes the desktop to appear black</span></span>
+
+
+<span data-ttu-id="e7a2f-106">전체 데스크톱 모드에서 작업 하는 경우 호스트 해상도를 변경 하 고 MED-V 작업 영역 창을 최대화 하면 바탕 화면이 검은색으로 나타나고 MED-V 작업 영역이 응답 하지 않을 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="e7a2f-106">When working in full desktop mode, if you change the host resolution and then maximize the MED-V workspace window, the desktop appears black and the MED-V workspace might not respond.</span></span>
+
+### <span data-ttu-id="e7a2f-107">해결 방법</span><span class="sxs-lookup"><span data-stu-id="e7a2f-107">Solution</span></span>
+
+<span data-ttu-id="e7a2f-108">MED-V 작업 영역을 중지 한 다음 시작 합니다.</span><span class="sxs-lookup"><span data-stu-id="e7a2f-108">Stop and then start the MED-V workspace.</span></span>
+
+## <span data-ttu-id="e7a2f-109">네트워크 어댑터가 사용 안 함으로 설정 된 상태에서 MED-V 작업 영역을 시작 하 고 나중에 어댑터를 사용 하도록 설정 하면 네트워크 연결이 복원 되지 않음</span><span class="sxs-lookup"><span data-stu-id="e7a2f-109">Starting a MED-V workspace with a network adapter disabled and then later enabling the adapter does not restore network connectivity</span></span>
+
+
+<span data-ttu-id="e7a2f-110">브리지 모드에서 MED-V 작업 영역을 구성한 다음 네트워크 어댑터를 사용 하지 않도록 설정 하는 동안 MED-V 작업 영역을 시작 하는 경우 어댑터가 나중에 사용 되는 경우 해당 어댑터를 통한 네트워크 연결이 복원 되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="e7a2f-110">If you configure a MED-V workspace in bridge mode and then start the MED-V workspace while a network adapter is disabled, if the adapter is later enabled, the network connectivity through that adapter is not restored.</span></span>
+
+### <span data-ttu-id="e7a2f-111">해결 방법</span><span class="sxs-lookup"><span data-stu-id="e7a2f-111">Solution</span></span>
+
+<span data-ttu-id="e7a2f-112">MED-V 작업 영역을 중지 한 다음 시작 합니다.</span><span class="sxs-lookup"><span data-stu-id="e7a2f-112">Stop and then start the MED-V workspace.</span></span>
+
+## <span data-ttu-id="e7a2f-113">이미지는 컴퓨터 당 하나의 Windows 사용자만 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="e7a2f-113">An image can be used by only one Windows user per computer</span></span>
+
+
+<span data-ttu-id="e7a2f-114">MED-V 작업 영역 이미지는 이미지를 다운로드 하거나 가져온 Windows 사용자만 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="e7a2f-114">A MED-V workspace image can be used only by the Windows user who downloaded or imported the image.</span></span> <span data-ttu-id="e7a2f-115">이 사용자는 다운로드 한 이미지가 있는 폴더에 대 한 사용 권한이 있는 관리자 외에는 사용자만이 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="e7a2f-115">This user is the only user aside from administrators who have permissions to the folder where the downloaded images are located.</span></span>
+
+### <span data-ttu-id="e7a2f-116">해결 방법</span><span class="sxs-lookup"><span data-stu-id="e7a2f-116">Solution</span></span>
+
+<span data-ttu-id="e7a2f-117">이미지 저장소의 ACL (액세스 제어 목록)을 수동으로 변경 합니다.</span><span class="sxs-lookup"><span data-stu-id="e7a2f-117">Manually change the access control list (ACL) on the image store.</span></span>
+
+## <span data-ttu-id="e7a2f-118">사용자 권한이 있는 Configuration Manager를 사용 하 여 MED-V를 설치 하는 경우 제거에 실패 함</span><span class="sxs-lookup"><span data-stu-id="e7a2f-118">When installing MED-V by using Configuration Manager with users rights enabled, uninstall fails</span></span>
+
+
+<span data-ttu-id="e7a2f-119">Microsoft System Center Configuration Manager를 사용 하 여 MED-V를 설치 하 고 패키지의 실행 모드를 사용자 권한으로 설정한 경우에는 관리자만 MED-V를 제거할 수 있다는 오류 메시지와 함께 제거에 실패 합니다.</span><span class="sxs-lookup"><span data-stu-id="e7a2f-119">If MED-V is installed by using Microsoft System Center Configuration Manager and the run mode of the package is set to users rights, uninstall fails with an error message that says that only administrative users can uninstall MED-V.</span></span>
+
+### <span data-ttu-id="e7a2f-120">해결 방법</span><span class="sxs-lookup"><span data-stu-id="e7a2f-120">Solution</span></span>
+
+<span data-ttu-id="e7a2f-121">MED-V에 대 한 Configuration Manager 패키지를 만들 때 실행 모드를 관리 권한으로 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="e7a2f-121">When creating a Configuration Manager package for MED-V, set the run mode to administrative rights.</span></span>
+
+## <span data-ttu-id="e7a2f-122">설치 후 클라이언트를 실행 하도록 설치 되어 있는 회사 배포 시스템을 사용 하 여 MED-V를 설치 하는 경우 클라이언트를 실행할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="e7a2f-122">When installing MED-V by using a corporate deployment system, where the installation is configured to run the client following installation, you cannot run the client</span></span>
+
+
+<span data-ttu-id="e7a2f-123">MED-V 클라이언트를 회사 배포 시스템을 사용 하 여 설치 하 고 설치 패키지는 클라이언트를 시스템 계정으로 실행 한 후에 클라이언트가 실행 되 고 있음을 알 수 없으며 (알림 영역을 제외 하 고),이를 사용 하 여 대화형 작업을 할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="e7a2f-123">If MED-V is installed by using a corporate deployment system and the installation package is configured to run MED-V client following the installation, after the client is running under the system account, you cannot see that the client is running (except in the notification area), and you cannot interact with it.</span></span>
+
+### <span data-ttu-id="e7a2f-124">해결 방법</span><span class="sxs-lookup"><span data-stu-id="e7a2f-124">Solution</span></span>
+
+<span data-ttu-id="e7a2f-125">회사 배포 시스템을 사용 하 여 MED-V를 설치 하는 경우 *시작 \ _MEDV = 0* .msi 매개 변수를 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="e7a2f-125">When installing MED-V by using a corporate deployment system, use the *START\_MEDV=0* .msi parameter.</span></span>
+
+## <span data-ttu-id="e7a2f-126">MED-V 테스트 이미지가 시작 되지 않음</span><span class="sxs-lookup"><span data-stu-id="e7a2f-126">MED-V test image fails to start</span></span>
+
+
+<span data-ttu-id="e7a2f-127">MED-V 테스트 이미지를 시작 하지 못하면 복구 되지 않으며 "GINA를 로드 하지 못했습니다." 오류 메시지와 함께 모든 이후 시작이 실패 합니다.</span><span class="sxs-lookup"><span data-stu-id="e7a2f-127">If a MED-V test image fails to start, it will never recover and all future startups will fail with a “GINA fail to load” error message.</span></span>
+
+### <span data-ttu-id="e7a2f-128">해결 방법</span><span class="sxs-lookup"><span data-stu-id="e7a2f-128">Solution</span></span>
+
+<span data-ttu-id="e7a2f-129">기존 테스트 이미지를 삭제 하 고 다시 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="e7a2f-129">Delete the existing test image and then re-create it.</span></span>
+
+## <span data-ttu-id="e7a2f-130">잘못 된 자격 증명을 사용 하 여 도메인에 가입 하려고 시도 하면 이미지가 도메인 가입에 성공 하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="e7a2f-130">After attempting to join a domain with the wrong credentials, the image never succeeds in joining the domain</span></span>
+
+
+<span data-ttu-id="e7a2f-131">가상 컴퓨터 첫 설치 스크립트의 일부인 참가 도메인 빌드 블록에 구성 오류가 있는 경우 도메인에 가입 하려고 할 때 MED-V 작업 영역이 실패 합니다.</span><span class="sxs-lookup"><span data-stu-id="e7a2f-131">If there is a configuration error in the join domain building block, which is part of the virtual machine first-time setup script, it causes the MED-V workspace to fail when attempting to join a domain.</span></span> <span data-ttu-id="e7a2f-132">구성 오류가 복구 된 후 MED-V 작업 영역에 포함 된 이미지가 도메인에 참가할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="e7a2f-132">After the configuration error is repaired, the image included in the MED-V workspace cannot join the domain.</span></span>
+
+### <span data-ttu-id="e7a2f-133">해결 방법</span><span class="sxs-lookup"><span data-stu-id="e7a2f-133">Solution</span></span>
+
+<span data-ttu-id="e7a2f-134">이미지가 배포 된 경우 이미지를 다시 배포 합니다.</span><span class="sxs-lookup"><span data-stu-id="e7a2f-134">If the image was deployed, redistribute the image.</span></span> <span data-ttu-id="e7a2f-135">이미지가 테스트 이미지인 경우 이미지를 다시 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="e7a2f-135">If the image was a test image, re-create the image.</span></span>
+
+## <span data-ttu-id="e7a2f-136">MED-V는 여러 모니터를 지원 하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="e7a2f-136">MED-V does not support multiple monitors</span></span>
+
+
+<span data-ttu-id="e7a2f-137">MED-V는 여러 모니터에서 게시 된 응용 프로그램을 표시 하는 것을 지원 하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="e7a2f-137">MED-V does not support displaying published applications across multiple monitors.</span></span> <span data-ttu-id="e7a2f-138">게시 된 응용 프로그램 및 기타 클라이언트 창은 잘못 된 화면에 표시 될 수 있으며 화면 연결이 끊어지면 MED-V가 모니터에 화면을 보내려고 시도 하 여 연결 된 모니터에 아무 것도 표시 되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="e7a2f-138">Published applications and other client windows may be displayed in the wrong screen, and sometimes after a screen is disconnected, MED-V attempts to send the screen to the monitor so that the connected monitor appears blank.</span></span>
+
+### <span data-ttu-id="e7a2f-139">해결 방법</span><span class="sxs-lookup"><span data-stu-id="e7a2f-139">Solution</span></span>
+
+<span data-ttu-id="e7a2f-140">추가 화면의 연결을 끊고 클라이언트를 다시 시작 합니다.</span><span class="sxs-lookup"><span data-stu-id="e7a2f-140">Disconnect the additional screen, and restart the client.</span></span>
+
+## <span data-ttu-id="e7a2f-141">MED-V 작업 영역 시작 중에 호스트가 충돌 하는 경우 MED-V 작업 영역이 시작 되지 않을 수 있음</span><span class="sxs-lookup"><span data-stu-id="e7a2f-141">MED-V workspace might fail to start if the host crashes during MED-V workspace startup</span></span>
+
+
+<span data-ttu-id="e7a2f-142">MED-V 작업 영역 시작 프로세스가 진행 되는 동안 호스트가 중단 되 고 "루트 요소 누락 됨" 이라는 오류 메시지가 표시 되는 경우 MED-V 작업 영역이 빈 가상 머신 구성 (VMC) 파일에 데이터를 추가할 수 있으며,이 경우 시작 프로세스에 오류가 발생 합니다.</span><span class="sxs-lookup"><span data-stu-id="e7a2f-142">If the host crashes during the MED-V workspace startup process and an error message appears that says “Root element is missing,” the MED-V workspace might add data to an empty virtual machine configuration (VMC) file, which will cause the startup process to fail.</span></span>
+
+### <span data-ttu-id="e7a2f-143">해결 방법</span><span class="sxs-lookup"><span data-stu-id="e7a2f-143">Solution</span></span>
+
+<span data-ttu-id="e7a2f-144">빈 VMC 파일을 기본 이미지의 VMC 파일로 바꿉니다.</span><span class="sxs-lookup"><span data-stu-id="e7a2f-144">Replace the empty VMC file with a VMC file from the base image.</span></span>
+
+## <span data-ttu-id="e7a2f-145">키보드는 게시 된 응용 프로그램 창에서 응답 하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="e7a2f-145">The keyboard does not respond in published application windows</span></span>
+
+
+<span data-ttu-id="e7a2f-146">MED-V 작업 영역에서 게시 된 응용 프로그램이 포커스를 할 때 Windows 로고 키를 누르면 키보드가 게시 된 응용 프로그램 창에서 더 이상 응답 하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="e7a2f-146">In a MED-V workspace, if you press the Windows logo key when a published application is in focus, the keyboard no longer responds in published application windows.</span></span>
+
+### <span data-ttu-id="e7a2f-147">해결 방법</span><span class="sxs-lookup"><span data-stu-id="e7a2f-147">Solution</span></span>
+
+<span data-ttu-id="e7a2f-148">게시 된 응용 프로그램이 포커스를 둔 상태에서 Windows 로고 키를 누릅니다.</span><span class="sxs-lookup"><span data-stu-id="e7a2f-148">Press the Windows logo key while a published application is in focus.</span></span>
+
+## <span data-ttu-id="e7a2f-149">도메인 MED-V 작업 영역이 도메인 자격 증명을 업데이트 하지 않음</span><span class="sxs-lookup"><span data-stu-id="e7a2f-149">A domain MED-V workspace does not update domain credentials</span></span>
+
+
+<span data-ttu-id="e7a2f-150">도메인 환경에서 영구 MED-V 작업 영역을 사용 하는 경우 도메인 암호를 변경 하는 경우 MED-V 클라이언트가 MED-V 작업 영역 도메인 자격 증명을 업데이트 하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="e7a2f-150">When using a persistent MED-V workspace in a domain environment, if you change your domain password, the MED-V client does not update the MED-V workspace domain credentials.</span></span> <span data-ttu-id="e7a2f-151">게시 된 응용 프로그램이 네트워크 리소스에 액세스 하려고 하면 자격 증명이 만료 되었음을 알리는 오류 메시지가 표시 됩니다.</span><span class="sxs-lookup"><span data-stu-id="e7a2f-151">When a published application attempts to access a network resource, you will receive an error message notifying you that your credentials expired.</span></span>
+
+### <span data-ttu-id="e7a2f-152">해결 방법</span><span class="sxs-lookup"><span data-stu-id="e7a2f-152">Solution</span></span>
+
+<span data-ttu-id="e7a2f-153">MED-V 작업 영역 운영 체제를 다시 시작 합니다.</span><span class="sxs-lookup"><span data-stu-id="e7a2f-153">Restart the MED-V workspace operating system.</span></span>
+
+## <span data-ttu-id="e7a2f-154">게시 된 최대화 응용 프로그램 windows 커버 호스트 작업 표시줄</span><span class="sxs-lookup"><span data-stu-id="e7a2f-154">Maximized published application windows cover the host taskbar</span></span>
+
+
+<span data-ttu-id="e7a2f-155">게시 된 응용 프로그램 창을 전체 화면으로 최대화 하면 호스트 작업 표시줄에 포함 될 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="e7a2f-155">If you maximize a published application window to full screen, it might cover the host taskbar.</span></span>
+
+### <span data-ttu-id="e7a2f-156">해결 방법</span><span class="sxs-lookup"><span data-stu-id="e7a2f-156">Solution</span></span>
+
+<span data-ttu-id="e7a2f-157">다음 중 하나를 수행합니다.</span><span class="sxs-lookup"><span data-stu-id="e7a2f-157">Do one of the following:</span></span>
+
+<span data-ttu-id="e7a2f-158">게시 된 응용 프로그램 창을 최소화 하 여 알림 영역에 대 한 액세스를 얻고 MED-V 작업 영역을 다시 시작 합니다.</span><span class="sxs-lookup"><span data-stu-id="e7a2f-158">Minimize the published application window to gain access to the notification area, and restart the MED-V workspace.</span></span>
+
+<span data-ttu-id="e7a2f-159">게시 된 응용 프로그램 창을 최소화 하 고 창을 최대화 상태로 복원 합니다.</span><span class="sxs-lookup"><span data-stu-id="e7a2f-159">Minimize the published application window, and then restore the window to its maximized state.</span></span>
+
+## <span data-ttu-id="e7a2f-160">MED-V 서버 구성 관리자에서 사용자 또는 그룹 추가가 작동 하지 않음</span><span class="sxs-lookup"><span data-stu-id="e7a2f-160">Adding users or groups in the MED-V Server Configuration Manager does not work</span></span>
+
+
+<span data-ttu-id="e7a2f-161">사용자 또는 그룹 **선택** 대화 상자에서 사용자 또는 그룹을 추가 하는 경우, Med-v 서버 구성 관리자의 액세스 제어 목록에 선택한 사용자 또는 그룹이 추가 되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="e7a2f-161">When adding users or groups in the **Select Users or Groups** dialog box, the selected users or groups are not added to the access control list in the MED-V Server Configuration Manager.</span></span>
+
+### <span data-ttu-id="e7a2f-162">해결 방법</span><span class="sxs-lookup"><span data-stu-id="e7a2f-162">Solution</span></span>
+
+<span data-ttu-id="e7a2f-163">**사용자 또는 그룹 이름 입력** 대화 상자를 사용 하 여 사용자 또는 그룹을 추가 합니다.</span><span class="sxs-lookup"><span data-stu-id="e7a2f-163">Add users or groups using the **Enter User or Group names** dialog box.</span></span> <span data-ttu-id="e7a2f-164">자세한 내용은 [Med-v 서버 구성 요소를 설치 하 고 구성 하는 방법을](how-to-install-and-configure-the-med-v-server-component.md#bkmk-configuringpermissions)참조 하세요.</span><span class="sxs-lookup"><span data-stu-id="e7a2f-164">For detailed information, see [How to Install and Configure the MED-V Server Component](how-to-install-and-configure-the-med-v-server-component.md#bkmk-configuringpermissions).</span></span>
+
+## <span data-ttu-id="e7a2f-165">MED-V는 windows 7 용 Windows Virtual PC가 설치 된 컴퓨터에서 작동 하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="e7a2f-165">MED-V does not work on computers with Windows Virtual PC for Windows 7 installed</span></span>
+
+
+<span data-ttu-id="e7a2f-166">MED-V에는 Windows 가상 PC2007 필요 합니다.</span><span class="sxs-lookup"><span data-stu-id="e7a2f-166">MED-V requires Windows Virtual PC2007.</span></span> <span data-ttu-id="e7a2f-167">Windows7 및 Virtual PC2007 SP1 용 Windows 가상 PC를 같은 컴퓨터에 설치할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="e7a2f-167">Windows Virtual PC for Windows7 and Virtual PC2007 SP1 cannot be installed on the same computer.</span></span>
+
+### <span data-ttu-id="e7a2f-168">해결 방법</span><span class="sxs-lookup"><span data-stu-id="e7a2f-168">Solution</span></span>
+
+<span data-ttu-id="e7a2f-169">Virtual PC2007 SP1 및 MED-V를 설치 하기 전에 Windows7의 가상 PC를 제거 합니다.</span><span class="sxs-lookup"><span data-stu-id="e7a2f-169">Uninstall Virtual PC for Windows7 before installing Virtual PC2007 SP1 and MED-V.</span></span>
+
+## <a href="" id="med-v-does-not-support-virtual-pc-and-windows-xp-mode-images-"></a><span data-ttu-id="e7a2f-170">MED-V는 가상 PC 및 WindowsXP 모드 이미지를 지원 하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="e7a2f-170">MED-V does not support Virtual PC and WindowsXP Mode images</span></span>
+
+
+<span data-ttu-id="e7a2f-171">MED-V 1.0 SP1은 Windows7 용 Windows 가상 PC에서 만든 이미지를 지원 하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="e7a2f-171">MED-V1.0 SP1 does not support images created by Windows Virtual PC for Windows7.</span></span> <span data-ttu-id="e7a2f-172">Windows7 image 용 가상 PC를 사용 하는 경우 시작 중에 클라이언트가 실패 합니다.</span><span class="sxs-lookup"><span data-stu-id="e7a2f-172">If a Virtual PC for Windows7 image is used, the client will fail during startup.</span></span>
+
+### <span data-ttu-id="e7a2f-173">해결 방법</span><span class="sxs-lookup"><span data-stu-id="e7a2f-173">Solution</span></span>
+
+<span data-ttu-id="e7a2f-174">Virtual PC2007 SP1을 사용 하 여 MED-V 이미지를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="e7a2f-174">Create MED-V images by using Virtual PC2007 SP1.</span></span>
+
+## <span data-ttu-id="e7a2f-175">Windows 방화벽은 가상 PC2007 SP1 네트워크 활동을 차단 합니다.</span><span class="sxs-lookup"><span data-stu-id="e7a2f-175">Windows firewall blocks Virtual PC2007 SP1 network activity</span></span>
+
+
+<span data-ttu-id="e7a2f-176">기본적으로 Windows 방화벽은 가상 PC2007 SP1 네트워크 활동을 차단 하 고, 클라이언트 컴퓨터에서 가상 PC2007 SP1이 시작 되 면 해당 시작 순서와 모든 네트워크 액세스를 차단 하는 방화벽 메시지가 있습니다.</span><span class="sxs-lookup"><span data-stu-id="e7a2f-176">By default, Windows firewall blocks Virtual PC2007 SP1 network activity, and when Virtual PC2007 SP1 initiates on the client computer, there is a firewall message that blocks its startup sequence and all network access.</span></span>
+
+### <span data-ttu-id="e7a2f-177">해결 방법</span><span class="sxs-lookup"><span data-stu-id="e7a2f-177">Solution</span></span>
+
+<span data-ttu-id="e7a2f-178">마지막 사용자가 MED-V를 사용 하기 전에 그룹 정책을 사용 하 여 방화벽 예외를 업데이트 합니다.</span><span class="sxs-lookup"><span data-stu-id="e7a2f-178">Update the firewall exception by using Group Policy before MED-V is used by the end user.</span></span>
+
+## <span data-ttu-id="e7a2f-179">클라이언트를 업그레이드할 때 오류 메시지가 표시 되는 경우</span><span class="sxs-lookup"><span data-stu-id="e7a2f-179">When upgrading the client an error message appears</span></span>
+
+
+<span data-ttu-id="e7a2f-180">MED-V 1.0에서 MED-V 1.0 SP1으로 클라이언트를 업그레이드 하는 경우 MED-V 작업 영역이 정의 되지 않았음을 알리는 메시지가 표시 될 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="e7a2f-180">When upgrading the client from MED-V1.0 to MED-V1.0 SP1, a message may appear notifying you that no MED-V workspace is defined.</span></span>
+
+### <span data-ttu-id="e7a2f-181">해결 방법</span><span class="sxs-lookup"><span data-stu-id="e7a2f-181">Solution</span></span>
+
+<span data-ttu-id="e7a2f-182">클라이언트를 닫고 다시 시작 합니다.</span><span class="sxs-lookup"><span data-stu-id="e7a2f-182">Close the client and restart it.</span></span>
+
+## <span data-ttu-id="e7a2f-183">관련 항목</span><span class="sxs-lookup"><span data-stu-id="e7a2f-183">Related topics</span></span>
+
+
+[<span data-ttu-id="e7a2f-184">MED-V 1.0 릴리스 정보</span><span class="sxs-lookup"><span data-stu-id="e7a2f-184">MED-V 1.0 Release Notes</span></span>](med-v-10-release-notesmedv-10.md)
+
+[<span data-ttu-id="e7a2f-185">MED-V 1.0 SP1 및 SP2 릴리스 정보</span><span class="sxs-lookup"><span data-stu-id="e7a2f-185">MED-V 1.0 SP1 and SP2 Release Notes</span></span>](med-v-10-sp1-and-sp2-release-notesmedv-10-sp1.md)
+
+ 
+
+ 
+
+
+
+
+
