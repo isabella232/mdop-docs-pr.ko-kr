@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 788258d786752d9430c25170ce67efe4b74c6e7a
-ms.sourcegitcommit: 354664bc527d93f80687cd2eba70d1eea024c7c3
+ms.openlocfilehash: 493ba7cb198d7eb33b96156b96389a036db6476b
+ms.sourcegitcommit: c8efa91966d6b4dc7be411c3842bac1c024a179e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10812449"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "10898855"
 ---
 ## 법적 고지 사항
 Microsoft와 모든 기여자는 [Creative Commons Attribution 4.0 국제 공개 라이선스](https://creativecommons.org/licenses/by/4.0/legalcode)에 따라 귀하에게 이 리포지토리의 Microsoft 설명서 및 기타 콘텐츠에 대한 라이선스([LICENSE](LICENSE) 파일 참조)를 부여하고, [MIT 라이선스](https://opensource.org/licenses/MIT)에 따라 귀하에게 리포지토리의 모든 코드에 대한 라이선스([LICENSE-CODE](LICENSE-CODE) 파일 참조)를 부여합니다.
