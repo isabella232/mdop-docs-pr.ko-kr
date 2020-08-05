@@ -11,12 +11,12 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/05/2017
-ms.openlocfilehash: b09ea8161b6801c62552f1c0d0ef8455dc111e2f
-ms.sourcegitcommit: 354664bc527d93f80687cd2eba70d1eea024c7c3
+ms.openlocfilehash: f8a69fb323d9f47c5b906ac3abc6ec59376ee6f7
+ms.sourcegitcommit: 0a7dee11289780336d9c24ebbf27c5c1ffee441c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10819098"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "10905605"
 ---
 # 설치할 AGPM 버전 선택
 
@@ -53,42 +53,47 @@ Windows 10을 실행 하는 컴퓨터를 사용 하 여 Gpo를 관리 하는 경
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Windows Server 2016 또는 Windows 10</p></td>
-<td align="left"><p>Windows Server 2016 또는 Windows 10</p></td>
+<td align="left"><p>Windows Server 2019 또는 Windows 10</p></td>
+<td align="left"><p>Windows Server 2019 또는 Windows 10</p></td>
 <td align="left"><p>지원함</p></td>
 </tr>
-<tr class="even">
+ <tr class="even">
+<td align="left"><p>Windows Server 2019 또는 Windows 10</p></td>
+<td align="left"><p>Windows Server 2019 또는 Windows 10</p></td>
+<td align="left"><p>지원함</p></td>
+</tr>
+<tr class="edd">
 <td align="left"><p>Windows Server2012 R2</p></td>
 <td align="left"><p>Windows 10</p></td>
 <td align="left"><p>KB 4015786에서 설명한 주의 사항으로 지원 됩니다. <a href="https://support.microsoft.com/help/4015786/known-issues-managing-a-windows-10-group-policy-client-in-windows-serv" data-raw-source="[KB 4015786](https://support.microsoft.com/help/4015786/known-issues-managing-a-windows-10-group-policy-client-in-windows-serv)"></a>
 </p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><p>Windows Server2012 R2 또는 Windows 8.1</p></td>
 <td align="left"><p>Windows Server2012 R2 또는 Windows 8.1</p></td>
 <td align="left"><p>지원함</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><p>Windows Server2012 R2, Windows Server 2012 또는 Windows 8.1</p></td>
 <td align="left"><p>Windows Server 2012 또는 Windows 8.1</p></td>
 <td align="left"><p>지원 되지만 Windows 8.1에만 있는 정책 설정 또는 기본 설정 항목은 편집할 수 없음</p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><p>Windows Server2008R2 또는 Windows7</p></td>
 <td align="left"><p>Windows Server2008R2 또는 Windows7</p></td>
 <td align="left"><p>지원 되지만 Windows 8.1에만 있는 정책 설정 또는 기본 설정 항목은 편집할 수 없음</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><p>Windows Server 2012, Windows Server2008R2 또는 Windows7</p></td>
 <td align="left"><p>Windows Server2008 또는 WindowsVista SP1(서비스 팩 1)</p></td>
 <td align="left"><p>지원 되지만 Windows Server2012 R2, Windows Server 2012, Windows Server2008R2, Windows 8.1 또는 Windows7에만 있는 정책 설정 또는 기본 설정 항목은 편집할 수 없습니다.</p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><p>Windows Server2008 또는 Windows Vista SP1</p></td>
 <td align="left"><p>Windows Server 2012, Windows Server2008R2, Windows 8 또는 Windows7</p></td>
 <td align="left"><p>지원되지 않음</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><p>Windows Server2008 또는 Windows Vista SP1</p></td>
 <td align="left"><p>Windows Server2008 또는 Windows Vista SP1</p></td>
 <td align="left"><p>지원 됨 (Windows Server2012 R2, Windows Server 2012, Windows Server2008R2, Windows 8.1 또는 Windows7에만 있는 정책 설정 또는 기본 설정 항목을 보고 하거나 편집할 수 없습니다.</p></td>
