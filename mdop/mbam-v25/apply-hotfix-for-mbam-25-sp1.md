@@ -1,7 +1,7 @@
 ---
 title: MBAM 2.5 SP1에 핫픽스 적용
 description: MBAM 2.5 SP1에 핫픽스 적용
-ms.author: ppriya-msft
+ms.author: dansimp
 author: dansimp
 ms.assetid: ''
 ms.reviewer: ''
@@ -11,12 +11,12 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.prod: w10
 ms.date: 8/30/2018
-ms.openlocfilehash: 71f840ce4d57a0698289128f92b9d760ca14ddfc
-ms.sourcegitcommit: 354664bc527d93f80687cd2eba70d1eea024c7c3
+ms.openlocfilehash: ea564d93a3eec6a46ec7d4c1be0f794abba9c93e
+ms.sourcegitcommit: 8ecbf818a6ff2ddafd80b93614c01256484737ad
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10824188"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "11014992"
 ---
 # MBAM 2.5 SP1에 핫픽스 적용
 이 항목에서는 Microsoft BitLocker 관리 및 모니터링 (MBAM) Server 2.5 SP1 용 핫픽스를 적용 하는 프로세스에 대해 설명 합니다.
