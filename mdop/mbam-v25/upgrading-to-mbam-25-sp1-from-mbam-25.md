@@ -11,12 +11,12 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.prod: w10
 ms.date: 2/16/2018
-ms.openlocfilehash: 19da3df0976b51700e0d10c302a31421a88d17e4
-ms.sourcegitcommit: 354664bc527d93f80687cd2eba70d1eea024c7c3
+ms.openlocfilehash: 330ded822dd9da96a1c33eabcb31d744044dc28e
+ms.sourcegitcommit: ae34c5cb5e7979b472b257a4691142e493d5d6fe
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10812745"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "11091623"
 ---
 # MBAM 2.5에서 MBAM 2.5 SP1으로 업그레이드
 이 항목에서는 Microsoft BitLocker 관리 및 모니터링 (MBAM) 서버 2.5 및 MBAM 클라이언트를 2.5에서 MBAM 2.5 SP1로 업그레이드 하는 프로세스에 대해 설명 합니다.
@@ -24,6 +24,10 @@ ms.locfileid: "10812745"
 ### 시작하기 전에
 #### 2019 년 5 월 서비스 릴리스 다운로드
 [데스크톱 최적화 팩](https://www.microsoft.com/download/details.aspx?id=58345)
+
+#### 7 월 2018 서비스 릴리스 다운로드
+[데스크톱 최적화 팩](https://www.microsoft.com/download/details.aspx?id=57157)
+
 
 #### 설치 documentaion 확인
 모든 서버 이름, 데이터베이스 이름, 서비스 계정 및 암호를 포함 하 여 현재 MBAM 환경에 대 한 문서가 있는지 확인 합니다.
