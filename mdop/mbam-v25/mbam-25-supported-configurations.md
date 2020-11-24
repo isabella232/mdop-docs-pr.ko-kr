@@ -11,12 +11,12 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.prod: w10
 ms.date: 10/24/2018
-ms.openlocfilehash: 262cd8c259dc37b291cdaf02caf0e20b7515d38b
-ms.sourcegitcommit: 354664bc527d93f80687cd2eba70d1eea024c7c3
+ms.openlocfilehash: 8ed7915e33c5e4735a7c58674ed5f7d6da8e9a06
+ms.sourcegitcommit: 9087f0a1b5bd3f81a9b790d5e39fdf39c18a2411
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10823893"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "11182930"
 ---
 # MBAM 2.5 지원되는 구성
 
@@ -33,7 +33,7 @@ Microsoft는 현재 서비스 팩 및 경우에 따라 바로 이전 서비스 �
 ## MBAM 지원 언어
 
 
-다음 표에는 MBAM 클라이언트에 대해 지원 되는 언어 (셀프 서비스 포털 포함) 및 MBAM 2.5 및 MBAM 2.5 SP1의 MBAM 서버가 나와 있습니다.
+다음 표에는 MBAM 클라이언트 (Self-Service 포털 포함) 및 MBAM 2.5 및 MBAM 2.5 SP1의 MBAM 서버에 대해 지원 되는 언어가 나와 있습니다.
 
 **MBAM 2.5 SP1의 지원 되는 언어:**
 
@@ -166,6 +166,12 @@ Microsoft는 현재 서비스 팩 및 경우에 따라 바로 이전 서비스 �
 </thead>
 <tbody>
 <tr class="odd">
+<td align="left"><p>Windows Server 2019</p></td>
+<td align="left"><p>표준 또는 데이터 센터</p></td>
+<td align="left"></td>
+<td align="left"><p>64비트</p></td>
+</tr>
+<tr class="odd">
 <td align="left"><p>Windows Server 2016</p></td>
 <td align="left"><p>표준 또는 데이터 센터</p></td>
 <td align="left"></td>
@@ -215,7 +221,7 @@ Microsoft는 현재 서비스 팩 및 경우에 따라 바로 이전 서비스 �
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>처리자</p></td>
+<td align="left"><p>프로세서</p></td>
 <td align="left"><p>2.33 GHz</p></td>
 <td align="left"><p>2.33 GHz 이상</p></td>
 </tr>
@@ -253,7 +259,7 @@ Microsoft는 현재 서비스 팩 및 경우에 따라 바로 이전 서비스 �
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>처리자</p></td>
+<td align="left"><p>프로세서</p></td>
 <td align="left"><p>2.33 GHz</p></td>
 <td align="left"><p>2.33 GHz 이상</p></td>
 </tr>
@@ -349,6 +355,10 @@ Sql **\ _Latin1 \ _General \ _CP1 \ _CI \ _AS** 데이터 정렬을 사용 하 �
 </thead>
 <tbody>
 <tr class="odd">
+<td align="left"><p>Microsoft SQL Server 2019</p></td>
+<td align="left"><p>표준, 엔터프라이즈 또는 데이터 센터</p></td>
+<td align="left"><p></p></td>
+<td align="left"><p>64비트</p></td><br/><tr class="even">
 <td align="left"><p>Microsoft SQL Server 2017</p></td>
 <td align="left"><p>표준, 엔터프라이즈 또는 데이터 센터</p></td>
 <td align="left"><p></p></td>
@@ -377,7 +387,9 @@ Sql **\ _Latin1 \ _General \ _CP1 \ _CI \ _AS** 데이터 정렬을 사용 하 �
 </table>
 
 **참고**  
-SQL 2016을 지원 하려면 MDOP 용 2017 서비스 릴리스를 설치 하 https://www.microsoft.com/download/details.aspx?id=54967 고 SQL 2017을 지원 하려면 mdop에 대해 7 월 2018 서비스 릴리스를 설치 해야 합니다 https://www.microsoft.com/download/details.aspx?id=57157 . 일반적으로 최신 서비스 업데이트를 항상 사용 하는 것은 물론, 모든 버그 수정과 새로운 기능도 포함 하 고 있습니다.
+MBAM에는 지원 되는 최대 호환성 수준 140이 있습니다. SQL Server 2019에서 만든 새 데이터베이스의 기본 호환성 수준은 데이터베이스를 만든 후 ALTER DATABASE 명령을 사용 하 여 140 이하로 변경 해야 하는 150입니다. SQL server 2017 또는 아래에서 마이그레이션한 기존 데이터베이스는 이전 호환성 수준으로 유지 되며 변경할 필요가 없습니다.
+
+SQL 2016을 지원 하려면 MDOP 용 2017 서비스 릴리스를 설치 하 https://www.microsoft.com/download/details.aspx?id=54967  고 SQL 2017을 지원 하려면 mdop에 대해 7 월 2018 서비스 릴리스를 설치 해야 합니다 https://www.microsoft.com/download/details.aspx?id=57157 . 일반적으로 최신 서비스 업데이트를 항상 사용 하는 것은 물론, 모든 버그 수정과 새로운 기능도 포함 하 고 있습니다.
 
 
 ### <a href="" id="bkmk-sql-stand-alone-ramreqs"></a>SQL Server 프로세서, RAM, 디스크 공간 요구 사항-독립 실행형 토폴로지
@@ -399,7 +411,7 @@ SQL 2016을 지원 하려면 MDOP 용 2017 서비스 릴리스를 설치 하 htt
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>처리자</p></td>
+<td align="left"><p>프로세서</p></td>
 <td align="left"><p>2.33 GHz</p></td>
 <td align="left"><p>2.33 GHz 이상</p></td>
 </tr>
@@ -437,7 +449,7 @@ SQL 2016을 지원 하려면 MDOP 용 2017 서비스 릴리스를 설치 하 htt
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>처리자</p></td>
+<td align="left"><p>프로세서</p></td>
 <td align="left"><p>2.33 GHz</p></td>
 <td align="left"><p>2.33 GHz 이상</p></td>
 </tr>
